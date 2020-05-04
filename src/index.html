@@ -1,22 +1,316 @@
 <!DOCTYPE html>
 <html>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- || GOOGLE FONTS || -->
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- css -->
+
+  <!-- || MATERIALIZE CSS || -->
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" href="index.css">
+
+  <!-- js -->
+
+  <!-- || ANGULAR JS || -->
+
+  <!-- angular js core -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+
+  <!-- angular js routing -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+
+
+  <!-- || MATERIALIZE JS || -->
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
 
 <body ng-app="myApp">
+  <!-- header -->
+  <header>
+    <nav>
+      <div class="nav-wrapper header">
+        <a href="#" class="brand-logo center logo-title">Save Tripura From COVID-19</a>
+      </div>
+    </nav>
+  </header>
+  <!-- header end -->
+  <main>
+    <div class="container main-body">
 
-  <a href="#/!">Index</a>
+      <!-- Covid 19 Updates -->
+      <!-- Title -->
+      <div class="row">
+        <div class="col m3 s6 covid-updates-title">
+          <h6>COVID-19 Updates</h6>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="row card covid-updates-content">
+
+        <!-- confirmed -->
+        <div class="col m2 s4 center">
+          <h5 id="confirmed-count">42533</h5>
+          <p id="confirmed-title">Confirmed</p>
+
+        </div>
+
+        <!-- Recovered -->
+        <div class="col m2 s4 center">
+          <h5 id="recovered-count">11707</h5>
+          <p id="recovered-title">Recovered</p>
+        </div>
+
+        <!-- Deaths -->
+        <div class="col m2 s4 center">
+          <h5 id="death-count">1373</h5>
+          <p id="death-title">Deaths</p>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!-- covid uppdates end -->
+
+    <!-- menus start -->
+
+    <div class="container">
+      <div class="row ">
+        <!-- FORMS -->
+        <div class="col m4 s12 ">
+          <div class="row">
+            <div class="col m12 s12">
+              <h6>Volunteer</h6>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col m6 s3 ">
+              <a href="" class="a-block center card">
+                <h6 class="">
+                  <i class="material-icons">people</i>
+                  <br>
+                  Volunteer
+                </h6>
+              </a>
+            </div>
+
+            <div class="col m6 s3 ">
+              <a href="" class="a-block center card">
+                <h6 class="">
+                  <i class="material-icons">people</i>
+                  <br>
+                  Volunteer
+                </h6>
+              </a>
+            </div>
+
+            <div class="col m6 s3 ">
+              <a href="" class="a-block center card">
+                <h6 class="">
+                  <i class="material-icons">people</i>
+                  <br>
+                  Volunteer
+                </h6>
+              </a>
+            </div>
+
+            <div class="col m6 s3 ">
+              <a href="" class="a-block center card">
+                <h6 class="">
+                  <i class="material-icons">people</i>
+                  <br>
+                  Volunteer
+                </h6>
+              </a>
+            </div>
+
+          </div>
+
+
+          
+        </div>
+        <!-- <div class="col m4 s12 ">
+          <div class="row ">
+            <div class="col m6 s3 ">
+              <a href="" class="a-block center card">
+                <h6 class="">
+                  <i class="material-icons">people</i>
+                  <br>
+                  Volunteer
+                </h6>
+              </a>
+            </div>
+
+            <div class="col m6 s3 ">
+              <a href="" class="a-block center card">
+                <h6 class="">
+                  <i class="material-icons">people</i>
+                  <br>
+                  Volunteer
+                </h6>
+              </a>
+            </div>
+
+            <div class="col m6 s3 ">
+              <a href="" class="a-block center card">
+                <h6 class="">
+                  <i class="material-icons">people</i>
+                  <br>
+                  Volunteer
+                </h6>
+              </a>
+            </div>
+
+            <div class="col m6 s3 ">
+              <a href="" class="a-block center card">
+                <h6 class="">
+                  <i class="material-icons">people</i>
+                  <br>
+                  Volunteer
+                </h6>
+              </a>
+            </div>
+
+          </div>
+
+
+          
+        </div>
+        <div class="col m4 s12 ">
+          <div class="row ">
+            <div class="col m6 s3 ">
+              <a href="" class="a-block center card">
+                <h6 class="">
+                  <i class="material-icons">people</i>
+                  <br>
+                  Volunteer
+                </h6>
+              </a>
+            </div>
+
+            <div class="col m6 s3 ">
+              <a href="" class="a-block center card">
+                <h6 class="">
+                  <i class="material-icons">people</i>
+                  <br>
+                  Volunteer
+                </h6>
+              </a>
+            </div>
+
+            <div class="col m6 s3 ">
+              <a href="" class="a-block center card">
+                <h6 class="">
+                  <i class="material-icons">people</i>
+                  <br>
+                  Volunteer
+                </h6>
+              </a>
+            </div>
+
+            <div class="col m6 s3 ">
+              <a href="" class="a-block center card">
+                <h6 class="">
+                  <i class="material-icons">people</i>
+                  <br>
+                  Volunteer
+                </h6>
+              </a>
+            </div>
+
+          </div>
+
+
+          
+        </div> -->
+      </div>
+
+  </main>
+
+
+  <!-- footer start -->
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12  m4 offset-m4 content">
+
+          <div class="row">
+            <div class="col s4 ">
+
+              <a href="" class="button">
+
+
+                <h6 class="">
+                  <i class="material-icons">home</i>
+                  <br>
+                  Home
+                </h6>
+              </a>
+
+            </div>
+            <div class="col s4">
+              <a href="" class="button">
+                <h6 class="">
+                  <i class="material-icons">notifications</i>
+                  <br>
+                  Notifications
+                </h6>
+              </a>
+            </div>
+
+
+            <div class="col s4">
+              <a href="" class="button">
+                <a href="" class="button">
+                  <h6 class="">
+                    <i class="material-icons">person</i>
+                    <br>
+                    Profile
+                  </h6>
+                </a>
+
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <!-- footer end -->
+
+  <!-- <a href="#/!">Index</a>
   <a href="#!banana">Home</a>
   <a href="#!tomato">Home</a>
-  
+
   <div ng-view>
   </div>
 
 <div ng-controller="HomeController">
 {{message}}
-</div>
+</div> -->
 
-<script src="index.js"></script>
+  <script src="index.js"></script>
 
 </body>
+
 </html>

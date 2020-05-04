@@ -1,0 +1,128 @@
+body{
+    background-color:#ececea
+}
+
+/* global */
+
+.border{
+    border:2px solid black;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+/* header  */
+
+.header {
+    background-color: #ffffff;
+}
+
+.header .logo-title {
+    color: #505050;
+}
+
+/* main body */
+
+.main-body{
+    margin-top: 1vh;
+}
+
+
+/* covid 19 panel */
+
+/* title */
+
+
+.covid-updates-title h6{
+    font-weight: bold;
+}
+
+/* contents */
+.covid-updates-content{
+    background-color: white;
+}
+
+/* confirmed */
+.covid-updates-content #confirmed-count{
+    color: red;
+    font-weight: bold;
+}
+.covid-updates-content #confirmed-title{
+    color: #505050;
+    font-weight: bold;
+}
+
+
+/* recovered */
+.covid-updates-content #recovered-count{
+    color: green;
+    font-weight: bold;
+}
+.covid-updates-content #recovered-title{
+    color: #505050;
+    font-weight: bold;
+}
+
+/* deaths */
+.covid-updates-content #death-count{
+    color: 505050;
+    font-weight: bold;
+}
+.covid-updates-content #death-title{
+    color: #505050;
+    font-weight: bold;
+}
+
+/* menus */
+
+/* menus global */
+
+.a-block{
+    display: block;
+    height: 40%;
+    width: 80%;
+    padding: 1vh;
+    background-color: white;
+    color:#404267;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
+/* footer */
+.page-footer{
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   background-color: transparent;
+   color: #505050;
+}
+
+.page-footer .content{
+    background-color: white;
+    padding: 1vh;
+}
+
+.page-footer .content h6{
+    color:#505050;
+}
+
+/* home */
+
+.page-footer .button{
+    display: block;
+}
+
+.page-footer a{
+    text-decoration: none;
+    color:#505050;
+}
+
+/* increase icon size */
+.page-footer i{
+    font-size: xx-large;
+}
