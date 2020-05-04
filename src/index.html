@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+
+<body ng-app="myApp">
+
+  <a href="#/!">Index</a>
+  <a href="#!banana">Home</a>
+  <a href="#!tomato">Home</a>
+  
+  <div ng-view>
+  </div>
+
+<div ng-controller="HomeController">
+{{message}}
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
