@@ -6,7 +6,7 @@ app.controller('HomeController', function($scope) {
 
 app.config(function($routeProvider) {
   $routeProvider
-  .when("/", {
+  .when("/home", {
     templateUrl : "sections/home/home.html"
   })
   .when("/notifications", {
