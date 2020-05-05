@@ -19,6 +19,16 @@ body{
     background-color: white;
 }
 
+.no-mp{
+    margin: 0;
+    padding: 0;
+}
+
+.p2{
+    padding: 1em;
+}
+
+
 /* header  */
 
 .header {
@@ -113,6 +123,10 @@ body{
     font-weight: bold;
 }
 
+.menu a:hover{
+    border: 1px solid white;
+}
+
 
 
 /* footer */
@@ -122,17 +136,8 @@ body{
    bottom: 0;
    width: 100%;
    text-align: center;
-   background-color: transparent;
-   color: #505050;
-}
-
-.page-footer .content{
-    background-color: white;
-    padding: 1vh;
-}
-
-.page-footer .content h6{
-    color:#505050;
+   background-color: white;
+   padding: 1em;
 }
 
 /* home */
@@ -143,9 +148,14 @@ body{
 
 .page-footer a{
     text-decoration: none;
-    color:#505050;
+   
+   color: #404267;
+
 }
 
+.page-footer a:hover{
+    color: black;
+}
 /* increase icon size */
 .page-footer i{
     font-size: xx-large;
