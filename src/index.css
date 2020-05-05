@@ -1,3 +1,10 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Bitter', serif;
+    letter-spacing: 0.07em;
+}
+
 body{
     background-color:#ececea
 }
@@ -15,11 +22,12 @@ body{
 /* header  */
 
 .header {
-    background-color: #ffffff;
+    background-color: #404267;
+    
 }
 
 .header .logo-title {
-    color: #505050;
+    color: white;
 }
 
 /* main body */
@@ -40,7 +48,9 @@ body{
 
 /* contents */
 .covid-updates-content{
-    background-color: white;
+    
+    border-left: 2px solid #404267;
+    border-right: 2px solid #404267;
 }
 
 /* confirmed */
@@ -77,18 +87,32 @@ body{
 /* menus */
 
 /* menus global */
-
 .a-block{
-    display: block;
-    height: 40%;
-    width: 80%;
-    padding: 1vh;
-    background-color: white;
+    text-decoration: none;
     color:#404267;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-    font-size: larger;
 }
+
+
+.a-block p{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.a-block i{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+/* menus global */
+
+.menu .card-like{
+    padding:2em 0.5em;
+    
+}
+
+.menu h6{
+    font-weight: bold;
+}
+
 
 
 /* footer */
