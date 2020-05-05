@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- || GOOGLE FONTS || -->
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+
+  <!-- font awesom -->
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+
+  <!-- css -->
+
+  <!-- || MATERIALIZE CSS || -->
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" href="volunteer.css">
+
+  <!-- js -->
+
+  <!-- || ANGULAR JS || -->
+
+  <!-- angular js core -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+
+  <!-- angular js routing -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+
+
+  <!-- || MATERIALIZE JS || -->
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
+
+<body ng-app="myApp">
+    <!-- header -->
+  <header>
+    <nav>
+      <div class="nav-wrapper header">
+        <p class="center flow-text">Save Tripura</p>
+      </div>
+    </nav>
+  </header>
+
+  <!-- view where it will append -->
+  <div ng-view></div>
+
+  <div class="divider"></div>
+  <!-- footer start -->
+
+  <footer class="page-footer no-mp">
+    <div class="container">
+      <div class="row no-mp">
+          <div class="row no-mp">
+            <div class="col m4 s4 p2">
+              <a href="#/!">
+              <i class="fas fa-home"></i>
+              <p>Home</p>
+            </a>
+            </div>
+            <div class="col m4 s4">
+              <a href="#!notifications">
+              <i class="fas fa-bell"></i>
+              
+              <p>Notifications</p>
+            </a>
+            </div>
+            <div class="col m4 s4">
+              <a href="#!profile">
+              <i class="fas fa-user"></i>
+              <p>Profile</p>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer end -->
+
+  <!-- <a href="#/!">Index</a>
+  <a href="#!banana">Home</a>
+  <a href="#!tomato">Home</a>
+
+  <div ng-view>
+  </div>
+
+<div ng-controller="HomeController">
+{{message}}
+</div> -->
+
+  <script src="volunteer.js"></script>
+
+</body>
+
+</html>
