@@ -70,20 +70,20 @@
 
         <!-- confirmed -->
         <div class="col m2 s4 center">
-          <h6 id="confirmed-count">42533</h6>
+          <h6 id="confirmed-count"></h6>
           <p id="confirmed-title">Confirmed</p>
 
         </div>
 
         <!-- Recovered -->
         <div class="col m2 s4 center">
-          <h6 id="recovered-count">11707</h6>
+          <h6 id="recovered-count"></h6>
           <p id="recovered-title">Recovered</p>
         </div>
 
         <!-- Deaths -->
         <div class="col m2 s4 center">
-          <h6 id="death-count">1373</h6>
+          <h6 id="death-count"></h6>
           <p id="death-title">Deaths</p>
         </div>
 
@@ -293,6 +293,27 @@
 <div ng-controller="HomeController">
 {{message}}
 </div> -->
+
+<script>
+  
+  const api_url = "https://api.covid19india.org/data.json";
+
+  async function getData(){
+    const response = await fetch(api_url);
+    const data = await response.json();
+    const state_wise_data = data.statewise[0]
+    
+    const {confirmed,recovered,deaths} = state_wise_data
+
+    document.getElementById("confirmed-count").textContent = confirmed
+    document.getElementById("recovered-count").textContent = recovered
+    document.getElementById("death-count").textContent = deaths
+
+  }
+
+  getData();
+
+</script>
 
 
 </body>
