@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaveTripura_Do-Don't</title>
+
+  <!-- || GOOGLE FONTS || -->
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+
+  <!-- font awesom -->
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+
+  <!-- css -->
+<style>
+  /* .a{
+    background-image: url(img/tripura.png);
+    opacity:0.5;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+    height:500px;
+  }
+  .a1{
+    margin-top: 93px;
+    margin-right: 40px;
+    
+  } */
+
+.split {
+  height:100%;
+  width: 50%;
+  position: fixed;
+  /* z-index: 1; */
+  /* top: 0; */
+  overflow-x: hidden;
+  /* padding-top: 20px; */
+}
+body{
+ margin-top: 200px;
+
+}
+
+.left {
+  left: 0;
+  background-color:#f29f41;
+}
+
+.right {
+  right: 0;
+  background-color:#0ab8a4;
+}
+
+.centered {
+  position: absolute;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+</style>
+  <!-- || MATERIALIZE CSS || -->
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" href="health.css">
+  <link rel="stylesheet" href="animate.css">
+  <!-- js -->
+
+  <!-- || ANGULAR JS || -->
+
+  <!-- angular js core -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+
+  <!-- angular js routing -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js"></script>
+
+
+  <!-- || MATERIALIZE JS || -->
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+</head>
+
+
+<body ng-app="myApp">
+    <!-- header -->
+  <header>
+    <nav>
+      <div class="nav-wrapper header">
+        <p class="center flow-text">Save Tripura</p>
+      </div>
+    </nav>
+  </header>
+
+  <!-- view where it will append -->
+  <div class="split left">
+    <div class="centered">
+      <img src="img/3.PNG" alt="DON'T">
+      <h2>DON'T</h2>
+      <p>Shake Hands!</p>
+      <br>
+      <img src="img/5.PNG" alt="DON'T">
+      <h2>DON'T</h2>
+      <p>Touch Your Mouth & Face!</p>
+      <br>
+      <img src="img/7.PNG" alt="DON'T">
+      <h2>DON'T</h2>
+      <p>Go To Bars Restaurants & Crowded Places!</p>
+      <br>
+      
+    </div>
+  </div>
+  
+  <div class="split right">
+    <div class="centered animate">
+      <img src="img/2.PNG" alt="DON'T">
+      <h2>DO</h2>
+      <p>Keep Distance & Say Namaste!</p>
+      <br>
+      <img src="img/4.PNG" alt="DON'T">
+      <h2>DO</h2>
+      <p>Wash Your Hands Often!</p>
+      <br>
+      <img src="img/6.PNG" alt="DON'T">
+      <h2>DO</h2>
+      <p>Cook Your Food At Home!</p>
+      <br>
+    </div>
+  </div>
+  <!-- <div class="">
+      <img src="img/11.png">
+      <div></div>
+  </div> -->
+
+
+
+  <!-- <div class="divider"></div> -->
+  <!-- footer start -->
+
+  <footer class="page-footer no-mp">
+    <div class="container">
+      <div class="row no-mp">
+          <div class="row no-mp">
+            <div class="col m4 s4 p2">
+              <a href="#/!">
+              <i class="fas fa-home"></i>
+              <p>Home</p>
+            </a>
+            </div>
+            <div class="col m4 s4">
+              <a href="#!notifications">
+              <i class="fas fa-bell"></i>
+              
+              <p>Notifications</p>
+            </a>
+            </div>
+            <div class="col m4 s4">
+              <a href="#!profile">
+              <i class="fas fa-user"></i>
+              <p>Profile</p>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer end -->
+
+  <!-- <a href="#/!">Index</a>
+  <a href="#!banana">Home</a>
+  <a href="#!tomato">Home</a>
+
+  <div ng-view>
+  </div>
+
+<div ng-controller="HomeController">
+{{message}}
+</div> -->
+
+<script src="wow.js"></script>
+<script>
+new WOW().init();
+</script>
+
+  <script src="health.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Bitter', serif;
+    letter-spacing: 0.07em;
+}
+
+body{
+    background-color:#ececea
+}
+
+/* global */
+
+.border{
+    border:2px solid black;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+
+.no-mp{
+    margin: 0;
+    padding: 0;
+}
+
+.m2{
+    margin-top: 1em;
+}
+
+.p2{
+    padding: 0.5em;
+}
+
+
+/* header  */
+
+.header {
+    background-color: #ee6e73;
+    
+}
+
+.header .logo-title {
+    color: white;
+}
+
+/* main body */
+
+.main-body{
+    margin-top: 1vh;
+}
+
+
+/* covid 19 panel */
+
+/* title */
+
+
+.covid-updates-title h6{
+    font-weight: bold;
+}
+
+/* contents */
+.covid-updates-content{
+    
+    border-left: 2px solid #ff6666;
+    border-right: 2px solid #ff6666;
+}
+
+/* confirmed */
+.covid-updates-content #confirmed-count{
+    color: red;
+    font-weight: bold;
+}
+.covid-updates-content #confirmed-title{
+    color: #ff6666;
+    font-weight: bold;
+}
+
+
+/* recovered */
+.covid-updates-content #recovered-count{
+    color: green;
+    font-weight: bold;
+}
+.covid-updates-content #recovered-title{
+    color: #505050;
+    font-weight: bold;
+}
+
+/* deaths */
+.covid-updates-content #death-count{
+    color: 505050;
+    font-weight: bold;
+}
+.covid-updates-content #death-title{
+    color: #505050;
+    font-weight: bold;
+}
+
+/* menus */
+
+/* menus global */
+.a-block{
+    text-decoration: none;
+    color:#ff6666;
+}
+
+
+.a-block p{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.a-block i{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+/* menus global */
+
+.menu .card-like{
+    padding:2em 0.5em;
+    
+}
+
+.menu h6{
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color:blueviolet;
+}
+
+.menu-title{
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* media query to handle mobile layout */
+@media screen and (max-width: 600px) {
+    .menu-title{
+      text-align: left;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+
+    /* menu card like */
+    .menu .card-like{
+        padding:1em 0.5em;
+        
+    }
+
+    /* icons */
+    .a-block i{
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+    .a-block p{
+        font-size: 0.7em;
+    }
+
+  }
+
+  
+  
+
+
+
+/* footer */
+.page-footer{
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   background-color: white;
+   padding: 1em;
+}
+
+/* home */
+
+.page-footer .button{
+    display: block;
+}
+
+.page-footer a{
+    text-decoration: none;
+   
+   color: #ff6666;
+
+}
+
+.page-footer a:hover{
+    color: black;
+}
+/* increase icon size */
+.page-footer i{
+    font-size: xx-large;
+}

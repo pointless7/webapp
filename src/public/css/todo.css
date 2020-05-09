@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+}
+
+.inputField {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20%;
+}
+
+.inputField button {
+  background-color: transparent;
+  border: none;
+  padding: 0 10px;
+  margin: 0;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#addTodoTextInput {
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid black;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+ul {
+  margin: 10px 20%;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #404267;
+  border-radius: 20px;
+  list-style-type: none;
+  color: whitesmoke;
+  transition: all 0.5s;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5em;
+}
+
+li {
+  margin: 10px 0;
+  padding: 5px 10px;
+  background-color:grey;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li span {
+  width: 100%;
+}
+
+.toggleButton,
+.deleteButton {
+  background-color: transparent;
+  border: none;
+}
+
+.toggleButton::before {
+  content: "\f00c";
+  font-family: FontAwesome;
+}
+
+.deleteButton::before {
+  content: "\f00d";
+  font-family: FontAwesome;
+}
+
+@media screen and (max-width: 700px) {
+  .inputField {
+    margin: 0;
+  }
+  .inputField button {
+    margin: 0 10px;
+  }
+  #addTodoTextInput {
+    width: 100%;
+    margin: 0;
+  }
+  ul {
+    margin: 10px;
+  }
+}

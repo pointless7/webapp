@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaveTripura_Alarm_Calendar</title>
+  <link rel="stylesheet" type="text/css" href="css/todo.css" />
+  <script src="js/todo.js"></script>
+  <!-- || Calender JS || -->
+  <link href="css/dycalendar.min.css" rel="stylesheet" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+
+  <!-- font awesom -->
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+
+ <!-- Todo Links -->
+ <link
+ href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap"
+ rel="stylesheet"
+/>
+<link
+ href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+ rel="stylesheet"
+/>
+<script src="https://use.fontawesome.com/e56805ad35.js"></script>
+<link
+ rel="stylesheet"
+ href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+ integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+ crossorigin="anonymous"
+/>
+  <!-- Compiled and minified CSS -->
+
+  <link rel="stylesheet" href="css/alarm.css">
+
+  <!-- js -->
+
+  <!-- || ANGULAR JS || -->
+
+  <!-- Alarm Clock CSS & JS -->
+  <style type="text/css">
+  body{
+    background-position: center;
+    /*background-image: url("tripura.png");*/
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+  }
+  .a1{
+    display: inline-block;
+    margin-right: 140px;
+    margin-left: 140px;
+  }
+  .a2{
+    color: #211c47; text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+    float:left;
+    margin: 50px;
+    font-size: 25px;
+    font-style: initial;
+    }
+    .todo{
+      clear: both;
+      margin-bottom: 200px;
+    }
+    #jsalarmclock{
+      line-height: 30px;
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 20px;
+    }
+    
+    #jsalarmclock div{
+    margin-bottom: 0.8em;
+    }
+    
+    #jsalarmclock div.leftcolumn{
+      line-height: 30px;
+    float: left;
+    width:200px;
+    font-size: 20px;
+    background-color: lightyellow;
+    clear: left;
+    }
+    
+    #jsalarmclock span{
+    margin-right: 5px;
+    }
+    
+    </style>
+    
+    <script type="text/javascript">
+    
+    /***********************************************
+    
+    * JavaScript Alarm Clock- by JavaScript Kit (www.javascriptkit.com)
+    * This notice must stay intact for usage
+    * Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
+    
+    ***********************************************/
+    
+    var jsalarm={
+      padfield:function(f){
+        return (f<10)? "0"+f : f
+      },
+      showcurrenttime:function(){
+        var dateobj=new Date()
+        var ct=this.padfield(dateobj.getHours())+":"+this.padfield(dateobj.getMinutes())+":"+this.padfield(dateobj.getSeconds())
+        this.ctref.innerHTML=ct
+        this.ctref.setAttribute("title", ct)
+        if (typeof this.hourwake!="undefined"){ //if alarm is set
+          if (this.ctref.title==(this.hourwake+":"+this.minutewake+":"+this.secondwake)){
+            clearInterval(jsalarm.timer)
+            window.location=document.getElementById("musicloc").value
+          }
+        }
+      },
+      init:function(){
+        var dateobj=new Date()
+        this.ctref=document.getElementById("jsalarm_ct")
+        this.submitref=document.getElementById("submitbutton")
+        this.submitref.onclick=function(){
+          jsalarm.setalarm()
+          this.value="Alarm Set"
+          this.disabled=true
+          return false
+        }
+        this.resetref=document.getElementById("resetbutton")
+        this.resetref.onclick=function(){
+        jsalarm.submitref.disabled=false
+        jsalarm.hourwake=undefined
+        jsalarm.hourselect.disabled=false
+        jsalarm.minuteselect.disabled=false
+        jsalarm.secondselect.disabled=false
+        return false
+        }
+        var selections=document.getElementsByTagName("select")
+        this.hourselect=selections[0]
+        this.minuteselect=selections[1]
+        this.secondselect=selections[2]
+        for (var i=0; i<60; i++){
+          if (i<24) //If still within range of hours field: 0-23
+          this.hourselect[i]=new Option(this.padfield(i), this.padfield(i), false, dateobj.getHours()==i)
+          this.minuteselect[i]=new Option(this.padfield(i), this.padfield(i), false, dateobj.getMinutes()==i)
+          this.secondselect[i]=new Option(this.padfield(i), this.padfield(i), false, dateobj.getSeconds()==i)
+    
+        }
+        jsalarm.showcurrenttime()
+        jsalarm.timer=setInterval(function(){jsalarm.showcurrenttime()}, 1000)
+      },
+      setalarm:function(){
+        this.hourwake=this.hourselect.options[this.hourselect.selectedIndex].value
+        this.minutewake=this.minuteselect.options[this.minuteselect.selectedIndex].value
+        this.secondwake=this.secondselect.options[this.secondselect.selectedIndex].value
+        this.hourselect.disabled=true
+        this.minuteselect.disabled=true
+        this.secondselect.disabled=true
+      }
+    }
+    
+    </script>
+
+
+</head>
+
+
+<body ng-app="myApp" style="height: 100%;" background="tripura.png">
+    <!-- header -->
+  <header>
+    <nav>
+      <div class="nav-wrapper header">
+      <center> <p style=" font-size: 26px; color: white; padding: 16.5px;">Save Tripura</p></center> 
+      </div>
+    </nav>
+  </header>
+
+  <!-- view where it will append -->
+  <center>
+     <div class="a2" >
+    <form action="" method="">
+      <div id="jsalarmclock">
+      <div><div class="leftcolumn">Current Time:</div> <span id="jsalarm_ct" style="letter-spacing: 2px"></span></div>
+      <div><div class="leftcolumn">Set Alarm:</div> <span><select></select> Hour</span> <span><select></select> Minutes</span> <span><select></select> Seconds</span></div>
+      <div><div class="leftcolumn">Set Alarm Action:</div> <input type="file" id="musicloc" size="55" value="" /> <input type="submit"></div>
+      <input type="submit" value="Set Alarm!" id="submitbutton" /> <input type="reset" value="reset" id="resetbutton" />
+      </div>
+      </form>
+    
+    <!-- <audio controls id="music">
+      <source src="alarm.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      
+      <p>Click the buttons to play or pause the music.</p>
+      
+      <button onclick="play()" type="button">Play </button>
+      <button onclick="pause()" type="button">Pause</button>
+      
+      <script>
+      var myMusic= document.getElementById("music");
+      function play() {
+      myMusic.play();
+      }
+      
+      function pause() {
+      myMusic.pause();
+      }-->
+      </script> 
+  </div>
+  <div class="a2" >
+  <div class="some-class">
+    <h3>Month calendar</h3>
+            <div class="calendar-container">
+                <div class="dycalendar-month dycalendar-container round-edge shadow-spacegray"></div>
+            </div>
+        </div>
+  </div>
+
+  </div>
+</center>
+<div class="todo">
+  <h1>Your Todo List </h1>
+
+  <div class="inputField">
+    <button onclick="handlers.toggleAll()">
+      <i class="fa fa-bolt" aria-hidden="true"></i>
+    </button>
+    <input id="addTodoTextInput" type="text" placeholder="What's Your Main Focus For Today ?" />
+    <button onclick="handlers.deleteAll()">
+      <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <ul>
+     Fantastic, no work to do!
+    <i class="far fa-grin-squint"></i>
+  </ul>
+ 
+      <h3 style="font-family: Dancing Script;text-align: center;"> “Don't be afraid to fail. Be afraid not to try.”</h3>
+      <p style="font-family: Dancing Script;text-align: center;">-Michael Jordan</p>
+    
+  <!--     <div>
+    <button onclick="handlers.changeTodo()">Change Todo</button>
+    <input id="changeTodoPositionInput" type="number">
+    <input id="changeTodoTextInput" type="text">
+  </div> -->
+</div>
+ 
+
+  <div class="divider"></div>
+  <!-- footer start -->
+
+  <footer class="page-footer no-mp">
+          <div>
+            <div class="a1">
+              <a href="#/!">
+              <i class="fas fa-home"></i>
+              <p>Home</p>
+            </a>
+            </div>
+            <div  class="a1">
+              <a href="#!notifications">
+              <i class="fas fa-bell"></i>
+              
+              <p>Notifications</p>
+            </a>
+            </div>
+            <div  class="a1">
+              <a href="#!profile">
+              <i class="fas fa-user"></i>
+              <p>Profile</p>
+            </a>
+          </div>
+          </div>
+  </footer>
+
+  <!-- footer end -->
+
+  <!-- <a href="#/!">Index</a>
+  <a href="#!banana">Home</a>
+  <a href="#!tomato">Home</a>
+
+  <div ng-view>
+  </div>
+
+<div ng-controller="HomeController">
+{{message}}
+</div> -->
+  <script type="text/javascript">
+    
+  jsalarm.init()
+  
+  </script>
+<script src="js/alarm.js"></script>
+<!-- calendar -->
+<!-- javascript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/dycalendar-jquery.min.js"></script>
+<script src="js/default.js"></script>
+<script src="js/todo.js"></script>
+
+</body>
+
+</html>
